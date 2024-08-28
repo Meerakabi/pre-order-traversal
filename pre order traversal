@@ -1,0 +1,15 @@
+function preOrderTraversalIterative(root):
+    if root is null:
+        return
+    
+    stack = empty stack
+    stack.push(root)
+    
+    while stack is not empty:
+        node = stack.pop()
+        visit(node)
+        
+        if node.right is not null:
+            stack.push(node.right)
+        if node.left is not null:
+            stack.push(node.left)
